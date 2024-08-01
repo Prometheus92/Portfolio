@@ -3,18 +3,21 @@
     padding: 0;
     box-sizing:border-box;
 }
+
+/* styles for mobile phones. */
 body{
     width: 100%;
     /* height: 100vh; */
     /* border: 2px solid red; */
-    background-color: #1c1347;
+    background-color: rgb(148, 149, 154);
 }
 header{
     border: 2px solid black;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header-icon{
     /* width: 100px; */
@@ -26,8 +29,7 @@ header{
     max-width: 80px;
     /* height: 131px; */
     margin: 5px;
-    border-radius: 10px;
-    
+    border-radius: 10px;   
 }
 .header-nav{
     min-width: 70%;
@@ -57,7 +59,25 @@ header{
     width: 100px;
     height: 60px;
     /* background-color: red; */
-
+}
+.header-burger{
+    order: 1;
+    margin-left: 120px;
+    margin-top: auto;
+    /* margin-bottom: 0px;    */
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 4px;
+    padding: 10px;
+    /* float: left; */
+}
+.header-burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
 }
 main{
     width: 100%;
@@ -76,11 +96,19 @@ main{
     width: 100%;
     border: 2px solid yellow;
     background-color: red;
-    height: fit-content;
+    /* height: 50vh;? */
+    display: flex;
+    justify-content: space-between;
 }
 .main-portfolio img{
+    margin-top: 5vh;
     border-radius: 50%;
-    /* float: left; */
+    width: 20%;
+    float: left;
+}
+.main-portfolio p{
+    /* float: right; */
+    margin-top: 10vh;
 }
 .main-services{
     clear: both;
