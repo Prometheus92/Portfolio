@@ -61,6 +61,7 @@ header{
     /* background-color: red; */
 }
 .header-burger{
+    display: none ;
     order: 1;
     margin-left: 120px;
     margin-top: auto;
