@@ -1,131 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-}
-
-/* styles for mobile phones. */
 body{
-    width: 100%;
-    /* height: 100vh; */
-    /* border: 2px solid red; */
-    background-color: rgb(148, 149, 154);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 header{
-    border: 2px solid black;
-    /* margin-top: 15px; */
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
 }
-.header-icon{
-    /* width: 100px; */
-    width: fit-content;
-    /* height: 60px; */
-    /* background-color: green; */
-}
-.header-icon a img{
-    max-width: 80px;
-    /* height: 131px; */
-    margin: 5px;
-    border-radius: 10px;   
+.header-icon img{
+    width: 100px;
+    /* height: 50px; */
+    border-radius: 50px;
+
 }
 .header-nav{
-    min-width: 70%;
-    height: 60px;
-    /* background-color: yellow; */
-    margin-top: 23px;
-    padding-top: 20px;
-    /* display: flex; */
-    /* justify-content: space-evenly; */
+    flex: 1;
+    border: 2px solid red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .header-nav ul{
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
 }
-.header-nav ul li a{
-    text-decoration: none;
-    color: white;
-    
-}
-.header-nav ul li a:hover{
-    text-decoration: underline;
-    color: #d31b77;
-    font-size: larger;
-}
-.header-sn{
-    width: 100px;
-    height: 60px;
-    /* background-color: red; */
-}
-.header-burger{
-    order: 1;
-    margin-left: 120px;
-    margin-top: auto;
-    /* margin-bottom: 0px;    */
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    gap: 4px;
-    padding: 10px;
-    /* float: left; */
-}
-.header-burger div{
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    border-radius: 5px;
-}
-main{
-    width: 100%;
-    border: 2px solid red;
-    /* height: 80% */
-    margin-top: 10px;
-    padding: 50px;
-}
-.main-home{
-    width: 100%;
-    border: 2px solid yellow;
-    background-color: yellowgreen;
-    height: 150px;
-}
-.main-portfolio{
-    width: 100%;
-    border: 2px solid yellow;
-    background-color: red;
-    /* height: 50vh;? */
-    display: flex;
-    justify-content: space-between;
-}
-.main-portfolio img{
-    margin-top: 5vh;
-    border-radius: 50%;
-    width: 20%;
-    float: left;
-}
-.main-portfolio p{
-    /* float: right; */
-    margin-top: 10vh;
-}
-.main-services{
-    clear: both;
-    width: 100%;
-    border: 2px solid yellow;
-    background-color: pink;
-    height: 150px;
-}
-.main-about{
-    width: 100%;
-    border: 2px solid yellow;
-    background-color: blue;
-    height: 150px;
-}
-.main-contact{
-    width: 100%;
-    border: 2px solid yellow;
-    background-color: orange;
-    height: 150px;
+.header-nav ul li{
+    margin: 0 1rem;
 }
